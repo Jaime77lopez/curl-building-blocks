@@ -11,8 +11,8 @@ curl -X POST https://api.nexmo.com/v0.1/dispatch \
     "template":"failover",
     "workflow": [
       {
-        "from": { "type": "whatsapp", "number": '$WHATSAPP_NUMBER' },
-        "to": { "type": "whatsapp", "number": '$TO_NUMBER' },
+        "from": { "type": "whatsapp", "number": '$525552881220' },
+        "to": { "type": "whatsapp", "number": '$525555036526' },
         "message": {
           "content": {
             "type": "text",
@@ -25,8 +25,8 @@ curl -X POST https://api.nexmo.com/v0.1/dispatch \
         }
       },
       {
-        "from": {"type": "sms", "number": '$FROM_NUMBER'},
-        "to": { "type": "sms", "number": '$TO_NUMBER'},
+        "from": {"type": "sms", "number": '$525552881220'},
+        "to": { "type": "sms", "number": '$525555036526'},
         "message": {
           "content": {
             "type": "text",
@@ -34,5 +34,5 @@ curl -X POST https://api.nexmo.com/v0.1/dispatch \
           }
         }
       }
-    ]
+    ]send-whatsapp-message-with-failover.sh
   }'
